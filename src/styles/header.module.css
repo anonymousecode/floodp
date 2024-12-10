@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Styling for the header */
 .Header {
@@ -13,31 +12,22 @@
 
 /* Styling for the navigation */
 .Nav {
-    grid-area: nav;
     display: flex;
     grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
     padding-right: 20px;
-    font-family:  "Rubik", sans-serif;;
+    font-family:  "Rubik", sans-serif;
 }
-
+.nav-nav{
+    display: flex;
+    justify-content: flex-end;
+}
 /* Links in the navigation */
-.Nav a {
+.Nav .nav-item {
     text-decoration: none;
     font-weight: bold;
-    color: white; /* White color for contrast against the green background */
-    padding: 10px;
-    margin: 0 5px;
-    transition: color 0.3s, background-color 0.3s; /* Smooth transitions for hover effects */
-    border-radius: 5px;
-}
-
-/* Hover effect for navigation links */
-.Nav a:hover {
-    background-color: #fff; /* White background on hover */
-    color: #2f89ff; /* Green text on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    list-style: none;
 }
 
 /* Styling for smaller screens */
@@ -54,7 +44,7 @@
         gap: 10px;
     }
 
-    .Nav a {
+    .Nav .nav-item {
         padding: 10px;
         width: 100%;
     }
@@ -68,4 +58,21 @@
     font-style: normal;
     font-size: 35px;
     color: #fff;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 5px;
+    
+    list-style: none;
+}
+
+.nav-link:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

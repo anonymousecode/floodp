@@ -1,13 +1,14 @@
 import React from 'react'
-import '../styles/tile1.css'
+import Styles from '../styles/tile1.module.css'
+import { Link } from 'react-router-dom'
 
 function Tile1() {
   return (
-    <div className="main" ><br />
-        <h1 className='title'>FLOOD PREDICTION SYSTEM</h1>
-        <h3 className='subTitle'>STAY INFORMED, STAY SAFE : FLOOD PREDICTION AT YOUR FINGERTIPS</h3>
+    <div className={Styles.main} ><br />
+        <h1 className={Styles.title}>FLOOD PREDICTION SYSTEM</h1>
+        <h3 className={Styles.subTitle}>STAY INFORMED, STAY SAFE : FLOOD PREDICTION AT YOUR FINGERTIPS</h3>
         <br /><br />
-        <button className='button-30' >FLOOD PREDICTION</button>
+        <Link to="/Predictor"><button className={Styles['button-30']} >FLOOD PREDICTION</button></Link>
     </div>
   )
 }

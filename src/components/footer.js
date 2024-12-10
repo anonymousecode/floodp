@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/footer.css'
+import Styles from '../styles/footer.module.css'
 
 function Footer() {
     const year = new Date().getFullYear();
   return (
-    <footer className='footer'>{`Copyright © <flood.p/>  ${year}`}</footer>
+    <footer className={Styles['footer']}>{`Copyright © <flood.p/>  ${year}`}</footer>
   )
 }
 
